@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     void OnCollisionEnter(Collision other) {
         if (other.gameObject.tag == "End" && levelEnded())
         {
-            SceneManager.LoadSceneAsync("Menu");
+            SceneManager.LoadScene(1);
             aSource.PlayOneShot(aWin, 1);
         }
         else if (levelEnded())

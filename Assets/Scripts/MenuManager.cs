@@ -33,7 +33,7 @@ public class MenuManager : MonoBehaviour
             aSource.PlayOneShot(aLaunch, 1);
             state = States.Loading;
             yield return new WaitForSeconds(4.6f);
-            SceneManager.LoadScene("level1");
+            SceneManager.LoadScene(0);
         }
     }
 
